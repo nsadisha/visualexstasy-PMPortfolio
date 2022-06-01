@@ -181,6 +181,84 @@
     <link rel="stylesheet" href="../css/simple-lightbox.min.css">
     <!-- swiper css -->
     <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <style>
+        /* all the css related to real-estate items */
+        
+        .real-estate-items {
+            display: flex;
+            /* gap: 2rem; */
+            /* padding: 4rem unset; */
+        }
+        
+        .real-estate-items .swiper-slide {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .real-estate-item {
+            position: relative;
+            padding: 1rem;
+            background-color: white;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+            border-radius: 7px;
+            margin-bottom: 1.5rem;
+            width: 16rem;
+        }
+        
+        .real-estate-item .img-wrapper {
+            overflow: hidden;
+            border-radius: 5px;
+        }
+        
+        .real-estate-item .img-wrapper img {
+            width: 100%;
+            aspect-ratio: 3 / 2;
+            object-fit: cover;
+            cursor: pointer;
+            transition: 0.5s;
+            filter: saturate(90%);
+        }
+        
+        .real-estate-item:hover .img-wrapper img {
+            filter: saturate(100%);
+            transform: scale(1.05);
+        }
+        
+        .real-estate-item .title {
+            margin-top: 1rem;
+            margin-bottom: 0.2rem;
+            text-align: start;
+            text-transform: uppercase;
+            color: #000000;
+        }
+        
+        .real-estate-item p {
+            font-size: 1rem;
+            text-align: start;
+        }
+        
+        .real-estate-item .read-more button {
+            width: 100%;
+            padding: 0.5rem;
+            border: solid 2px black;
+            border-radius: 5px;
+            color: black;
+            background-color: transparent;
+            margin-top: 0.5rem;
+            transition: 0.3s;
+        }
+        
+        .real-estate-item .read-more button:hover {
+            background-color: black;
+            color: white;
+        }
+        
+        @media only screen and (max-width:800px) {
+            .real-estate-item {
+                margin-bottom: 0;
+            }
+        }
+    </style>
     <style type='text/css'>
         img#wpstats {
             display: none
@@ -918,99 +996,7 @@ your theme's stylesheet content.
             </section>
 
             <div class="thb-section-container thb-skin-dark">
-                <div id="main-content">
-                    <div class="thb-text" style="text-align: center;">
-                        <!-- provide a title -->
-                        <h1 class="thb-section-title"><strong>Lorem Ipsum Dolor</strong></h1>
-                        <!-- profide a description -->
-                        <p class="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum vero, quis quo laboriosam ratione molestias dolores alias tenetur ducimus repellendus excepturi error tempora iure vitae sunt nihil incidunt. Rerum, odio!</p>
-                        <p class="p1">Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Faucibus purus in massa tempor nec feugiat nisl. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet. Nisi est sit amet facilisis magna.
-                            Magna fringilla urna porttitor rhoncus. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Arcu cursus euismod quis viverra nibh cras pulvinar. Pellentesque habitant morbi tristique senectus et netus. Egestas
-                            quis ipsum suspendisse ultrices gravida dictum fusce. Aliquet bibendum enim facilisis gravida neque convallis. Velit scelerisque in dictum non consectetur a erat nam. Interdum velit euismod in pellentesque massa. Leo urna molestie
-                            at elementum eu facilisis.</p>
-                    </div>
-                </div>
-            </div>
-
-            <style>
-                .real-estate-items {
-                    display: flex;
-                    /* gap: 2rem; */
-                    /* padding: 4rem unset; */
-                }
-                
-                .real-estate-items .swiper-slide {
-                    display: flex;
-                    justify-content: center;
-                }
-                
-                .real-estate-item {
-                    position: relative;
-                    padding: 1rem;
-                    background-color: white;
-                    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
-                    border-radius: 7px;
-                    margin-bottom: 1.5rem;
-                    width: 16rem;
-                }
-                
-                .real-estate-item .img-wrapper {
-                    overflow: hidden;
-                    border-radius: 5px;
-                }
-                
-                .real-estate-item .img-wrapper img {
-                    width: 100%;
-                    aspect-ratio: 3 / 2;
-                    object-fit: cover;
-                    cursor: pointer;
-                    transition: 0.5s;
-                    filter: saturate(90%);
-                }
-                
-                .real-estate-item:hover .img-wrapper img {
-                    filter: saturate(100%);
-                    transform: scale(1.05);
-                }
-                
-                .real-estate-item .title {
-                    margin-top: 1rem;
-                    margin-bottom: 0.2rem;
-                    text-align: start;
-                    text-transform: uppercase;
-                    color: #000000;
-                }
-                
-                .real-estate-item p {
-                    font-size: 1rem;
-                    text-align: start;
-                }
-                
-                .real-estate-item .read-more button {
-                    width: 100%;
-                    padding: 0.5rem;
-                    border: solid 2px black;
-                    border-radius: 5px;
-                    color: black;
-                    background-color: transparent;
-                    margin-top: 0.5rem;
-                    transition: 0.3s;
-                }
-                
-                .real-estate-item .read-more button:hover {
-                    background-color: black;
-                    color: white;
-                }
-                
-                @media only screen and (max-width:800px) {
-                    .real-estate-item {
-                        margin-bottom: 0;
-                    }
-                }
-            </style>
-
-            <div class="thb-section-container thb-skin-dark">
-                <div id="main-content" style="margin-top: 0;">
+                <div id="main-content" style="margin-top: 2rem;">
                     <div class="thb-text" style="text-align: center;">
                         <!-- provide a title -->
                         <h1 class="thb-section-title"><strong>Lorem Ipsum Dolor</strong></h1>
@@ -1094,9 +1080,25 @@ your theme's stylesheet content.
                             </div>
 
                         </div>
+                        <!-- do not remove these -->
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="thb-section-container thb-skin-dark">
+                <div id="main-content" style="margin-top: 3rem;">
+                    <div class="thb-text" style="text-align: center;">
+                        <!-- provide a title -->
+                        <h1 class="thb-section-title"><strong>Lorem Ipsum Dolor</strong></h1>
+                        <!-- profide a description -->
+                        <p class="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum vero, quis quo laboriosam ratione molestias dolores alias tenetur ducimus repellendus excepturi error tempora iure vitae sunt nihil incidunt. Rerum, odio!</p>
+                        <p class="p1">Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Faucibus purus in massa tempor nec feugiat nisl. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet. Nisi est sit amet facilisis magna.
+                            Magna fringilla urna porttitor rhoncus. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Arcu cursus euismod quis viverra nibh cras pulvinar. Pellentesque habitant morbi tristique senectus et netus. Egestas
+                            quis ipsum suspendisse ultrices gravida dictum fusce. Aliquet bibendum enim facilisis gravida neque convallis. Velit scelerisque in dictum non consectetur a erat nam. Interdum velit euismod in pellentesque massa. Leo urna molestie
+                            at elementum eu facilisis.</p>
                     </div>
                 </div>
             </div>
@@ -1280,13 +1282,14 @@ your theme's stylesheet content.
         <script src="../js/swiper-bundle.min.js"></script>
         <!-- Initialize Swiper -->
         <script>
+            // all the configuration related to swiper goes here
             var swiper = new Swiper(".mySwiper", {
                 slidesPerView: 1,
                 spaceBetween: 30,
                 slidesPerGroup: 1,
                 loop: true,
                 autoplay: true,
-                delay: 2500,
+                delay: 3000,
                 loopFillGroupWithBlank: false,
                 pagination: {
                     el: ".swiper-pagination",
@@ -1311,6 +1314,7 @@ your theme's stylesheet content.
 
         <script src="../js/simple-lightbox.min.js"></script>
         <script>
+            // configuration related to light box
             var lightbox = new SimpleLightbox('.real-estate-gallery a')
             var lightbox2 = new SimpleLightbox('.real-estate-item a.light-box-link')
         </script>

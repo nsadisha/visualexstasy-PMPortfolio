@@ -559,7 +559,7 @@ your theme's stylesheet content.
         </header>
 
 
-        <div id="page-content" style="padding-top: 2rem;">
+        <div id="page-content" style="padding-top: 3rem;">
 
             <section id="thb-section-1" class="thb-section boxed thb-section-boxed">
                 <!-- edit 'cooking-2.jpg to change the image' -->
@@ -598,6 +598,21 @@ your theme's stylesheet content.
                                                 width: 90%;
                                                 aspect-ratio: 2 / 3;
                                                 object-fit: cover;
+                                            }
+                                            
+                                            @media only screen and (max-width: 800px) {
+                                                #food-image {
+                                                    width: 100%;
+                                                }
+                                                .thb-section-title {
+                                                    margin-top: 1.5rem;
+                                                }
+                                                .thb-section-column {
+                                                    padding-bottom: 0 !important;
+                                                }
+                                                .thb-text {
+                                                    margin-bottom: 1.5rem;
+                                                }
                                             }
                                         </style>
                                         <section id="thb-section-1-row-1-column-0-block-0" class="thb-section-column-block thb-section-column-block-thb_text_box icon-big layout-centered icon-style-a layout-style-a " data-section="1" data-row="1" data-column="0" data-index="0">

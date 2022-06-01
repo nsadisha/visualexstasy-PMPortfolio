@@ -179,6 +179,8 @@
     <link rel="stylesheet" href="../css/gallery.css">
     <!-- light box -->
     <link rel="stylesheet" href="../css/simple-lightbox.min.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
     <style type='text/css'>
         img#wpstats {
             display: none
@@ -684,63 +686,7 @@ your theme's stylesheet content.
                             </div>
                         </div>
                         <div id="thb-section-1-row-1" class="thb-section-row">
-                            <style>
-                                .real-estate-item {
-                                    position: relative;
-                                    padding: 1rem;
-                                    background-color: white;
-                                    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
-                                    border-radius: 7px;
-                                }
-                                
-                                .real-estate-item .img-wrapper {
-                                    overflow: hidden;
-                                    border-radius: 5px;
-                                }
-                                
-                                .real-estate-item .img-wrapper img {
-                                    width: 100%;
-                                    aspect-ratio: 3 / 2;
-                                    object-fit: cover;
-                                    cursor: pointer;
-                                    transition: 0.5s;
-                                    filter: saturate(90%);
-                                }
-                                
-                                .real-estate-item:hover .img-wrapper img {
-                                    filter: saturate(100%);
-                                    transform: scale(1.05);
-                                }
-                                
-                                .real-estate-item .title {
-                                    margin-top: 1rem;
-                                    margin-bottom: 0.2rem;
-                                    text-align: start;
-                                    text-transform: uppercase;
-                                    color: #000000;
-                                }
-                                
-                                .real-estate-item p {
-                                    font-size: 1rem;
-                                    text-align: start;
-                                }
-                                
-                                .real-estate-item .read-more button {
-                                    width: 100%;
-                                    padding: 0.5rem;
-                                    border: solid 2px black;
-                                    border-radius: 5px;
-                                    color: black;
-                                    background-color: transparent;
-                                    margin-top: 0.5rem;
-                                    transition: 0.3s;
-                                }
-                                
-                                .real-estate-item .read-more button:hover {
-                                    background-color: black;
-                                    color: white;
-                                }
-                            </style>
+
                             <div class="thb-section-row-inner-wrapper food-gallery">
                                 <div id="thb-section-1-row-1-column-0" class="thb-section-column thb-section-column-size-one-third thb-section-column-index-0 ">
                                     <div class="thb-section-column-inner-wrapper">
@@ -791,10 +737,6 @@ your theme's stylesheet content.
                                         </section>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div id="thb-section-1-row-1" class="thb-section-row">
-                            <div class="thb-section-row-inner-wrapper">
                                 <div id="thb-section-1-row-1-column-0" class="thb-section-column thb-section-column-size-one-third thb-section-column-index-0 ">
                                     <div class="thb-section-column-inner-wrapper">
                                         <section id="thb-section-1-row-1-column-0-block-0" class="thb-section-column-block thb-section-column-block-thb_text_box icon-big layout-centered icon-style-a layout-style-a " data-section="1" data-row="1" data-column="0" data-index="0">
@@ -990,6 +932,175 @@ your theme's stylesheet content.
                 </div>
             </div>
 
+            <style>
+                .real-estate-items {
+                    display: flex;
+                    /* gap: 2rem; */
+                    /* padding: 4rem unset; */
+                }
+                
+                .real-estate-items .swiper-slide {
+                    display: flex;
+                    justify-content: center;
+                }
+                
+                .real-estate-item {
+                    position: relative;
+                    padding: 1rem;
+                    background-color: white;
+                    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+                    border-radius: 7px;
+                    margin-bottom: 1.5rem;
+                    width: 16rem;
+                }
+                
+                .real-estate-item .img-wrapper {
+                    overflow: hidden;
+                    border-radius: 5px;
+                }
+                
+                .real-estate-item .img-wrapper img {
+                    width: 100%;
+                    aspect-ratio: 3 / 2;
+                    object-fit: cover;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    filter: saturate(90%);
+                }
+                
+                .real-estate-item:hover .img-wrapper img {
+                    filter: saturate(100%);
+                    transform: scale(1.05);
+                }
+                
+                .real-estate-item .title {
+                    margin-top: 1rem;
+                    margin-bottom: 0.2rem;
+                    text-align: start;
+                    text-transform: uppercase;
+                    color: #000000;
+                }
+                
+                .real-estate-item p {
+                    font-size: 1rem;
+                    text-align: start;
+                }
+                
+                .real-estate-item .read-more button {
+                    width: 100%;
+                    padding: 0.5rem;
+                    border: solid 2px black;
+                    border-radius: 5px;
+                    color: black;
+                    background-color: transparent;
+                    margin-top: 0.5rem;
+                    transition: 0.3s;
+                }
+                
+                .real-estate-item .read-more button:hover {
+                    background-color: black;
+                    color: white;
+                }
+                
+                @media only screen and (max-width:800px) {
+                    .real-estate-item {
+                        margin-bottom: 0;
+                    }
+                }
+            </style>
+
+            <div class="thb-section-container thb-skin-dark">
+                <div id="main-content" style="margin-top: 0;">
+                    <div class="thb-text" style="text-align: center;">
+                        <!-- provide a title -->
+                        <h1 class="thb-section-title"><strong>Lorem Ipsum Dolor</strong></h1>
+                        <!-- profide a description -->
+                        <p class="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum vero, quis quo laboriosam ratione molestias dolores alias tenetur ducimus repellendus excepturi error tempora iure vitae sunt nihil incidunt. Rerum, odio!</p>
+                    </div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper real-estate-items">
+
+                            <div class="swiper-slide">
+                                <div class="real-estate-item">
+                                    <a class="light-box-link" href="real-estate-3.jpg">
+                                        <div class="img-wrapper">
+                                            <img src="real-estate-3.jpg" alt="" title="Title 1">
+                                        </div>
+                                    </a>
+                                    <h4 class="title"><strong>Some title</strong></h4>
+                                    <p>Etiam erat velit scelerisque in dictum non consectetur a. Lacus viverra scelerisque in dictum non...</p>
+                                    <a href="#" class="read-more"><button>Read more</button></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="real-estate-item">
+                                    <a class="light-box-link" href="real-estate-4.jpg">
+                                        <div class="img-wrapper">
+                                            <img src="real-estate-4.jpg" alt="" title="Some title">
+                                        </div>
+                                    </a>
+                                    <h4 class="title"><strong>Some title</strong></h4>
+                                    <p>Etiam erat velit scelerisque in dictum non consectetur a. Lacus viverra scelerisque in dictum non...</p>
+                                    <a href="#" class="read-more"><button>Read more</button></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="real-estate-item">
+                                    <a class="light-box-link" href="real-estate-2.jpg">
+                                        <div class="img-wrapper">
+                                            <img src="real-estate-2.jpg" alt="" title="Food item 3">
+                                        </div>
+                                    </a>
+                                    <h4 class="title"><strong>Some title</strong></h4>
+                                    <p>Etiam erat velit scelerisque in dictum non consectetur a. Lacus viverra scelerisque in dictum non...</p>
+                                    <a href="#" class="read-more"><button>Read more</button></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="real-estate-item">
+                                    <a class="light-box-link" href="real-estate-5.jpg">
+                                        <div class="img-wrapper">
+                                            <img src="real-estate-5.jpg" alt="" title="Food item 4">
+                                        </div>
+                                    </a>
+                                    <h4 class="title"><strong>Some title</strong></h4>
+                                    <p>Etiam erat velit scelerisque in dictum non consectetur a. Lacus viverra scelerisque in dictum non...</p>
+                                    <a href="#" class="read-more"><button>Read more</button></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="real-estate-item">
+                                    <a class="light-box-link" href="real-estate-8.jpg">
+                                        <div class="img-wrapper">
+                                            <img src="real-estate-8.jpg" alt="" title="Title 5">
+                                        </div>
+                                    </a>
+                                    <h4 class="title"><strong>Some title</strong></h4>
+                                    <p>Etiam erat velit scelerisque in dictum non consectetur a. Lacus viverra scelerisque in dictum non...</p>
+                                    <a href="#" class="read-more"><button>Read more</button></a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="real-estate-item">
+                                    <a class="light-box-link" href="real-estate-9.jpg">
+                                        <div class="img-wrapper">
+                                            <img src="real-estate-9.jpg" alt="" title="Last one">
+                                        </div>
+                                    </a>
+                                    <h4 class="title"><strong>Some title</strong></h4>
+                                    <p>Etiam erat velit scelerisque in dictum non consectetur a. Lacus viverra scelerisque in dictum non...</p>
+                                    <a href="#" class="read-more"><button>Read more</button></a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+
 
             <div id="thb-section-0" class="thb-section boxed  thb-skin-light thb-skin-light thb-section-boxed">
                 <!-- edit the below 'cooking-3.jpg' to change the background image -->
@@ -1164,6 +1275,38 @@ your theme's stylesheet content.
             };
             var et_pb_box_shadow_elements = [];
             /* ]]> */
+        </script>
+
+        <script src="../js/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                slidesPerGroup: 1,
+                loop: true,
+                autoplay: true,
+                delay: 2500,
+                loopFillGroupWithBlank: false,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    1100: {
+                        slidesPerView: 3,
+                        spaceBetween: 50,
+                    },
+                },
+            });
         </script>
 
         <script src="../js/simple-lightbox.min.js"></script>

@@ -173,6 +173,8 @@
     <link rel='dns-prefetch' href='https://1.gravatar.com/' />
     <link rel='dns-prefetch' href='https://2.gravatar.com/' />
 
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+
     <!-- css related to dropdown list item -->
     <link rel="stylesheet" href="../css/dropdown.css">
     <style type='text/css'>
@@ -655,7 +657,73 @@ your theme's stylesheet content.
             </section>
 
             <div class="thb-section-container thb-skin-dark">
-                <div id="main-content">
+                <div id="main-content" style="margin-top: 3rem;">
+                    <div class="thb-text" style="text-align: center;">
+                        <!-- provide a title -->
+                        <h1 class="thb-section-title"><strong>Where Do I Play</strong></h1>
+                        <!-- profide a description -->
+                        <p class="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum vero, quis quo laboriosam ratione molestias dolores alias tenetur ducimus repellendus excepturi error tempora iure vitae sunt nihil incidunt. Rerum, odio!</p>
+
+                        <style>
+                            .swiper-slide {
+                                display: grid;
+                                padding: 1rem;
+                                border: solid 2px #007cba;
+                                margin-bottom: 5px;
+                                cursor: pointer;
+                                color: #007cba;
+                                text-transform: uppercase;
+                                font-weight: 600;
+                                transition: 0.3s;
+                            }
+                            
+                            .swiper-slide:hover {
+                                background-color: #007cba;
+                                color: white;
+                            }
+                            
+                            .swiper-slide:hover i {
+                                color: white;
+                            }
+                            
+                            .swiper-slide i {
+                                color: #007cba;
+                                font-size: 3rem;
+                                width: 100%;
+                            }
+                        </style>
+
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <i class="thb-section-block-icon icon-music"></i>
+                                    <span class="slide-title">Wedding</span>
+                                </div>
+                                <div class="swiper-slide">
+                                    <i class="thb-section-block-icon icon-music"></i>
+                                    <span class="slide-title">Clubs & Bars</span>
+                                </div>
+                                <div class="swiper-slide">
+                                    <i class="thb-section-block-icon icon-music"></i>
+                                    <span class="slide-title">Corporate Events</span>
+                                </div>
+                                <div class="swiper-slide">
+                                    <i class="thb-section-block-icon icon-music"></i>
+                                    <span class="slide-title">Playlist Creation</span></div>
+                                <div class="swiper-slide">
+                                    <i class="thb-section-block-icon icon-music"></i>
+                                    <span class="slide-title">Dj Lessions</span></div>
+                                <div class="swiper-slide">
+                                    <i class="thb-section-block-icon icon-music"></i>
+                                    <span class="slide-title">Live Shows</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="thb-section-container thb-skin-dark">
+                <div id="main-content" style="margin-top: 0;">
                     <div class="thb-text">
                         <p class="p1"><img data-attachment-id="2368" src="dj-5.jpg" class="alignright size-medium wp-image-2368" style="width:420px;height:600px;" /></p>
                         <p class="p1"></p>
@@ -664,6 +732,67 @@ your theme's stylesheet content.
                         <p class="p1">Gravida in fermentum et sollicitudin ac orci phasellus egestas. Eleifend quam adipiscing vitae proin sagittis nisl. Purus ut faucibus pulvinar elementum. Vivamus at augue eget arcu dictum varius. Sodales ut etiam sit amet nisl
                             purus in. Sit amet tellus cras adipiscing enim eu turpis. Erat nam at lectus urna duis convallis convallis tellus.</p>
                         <p class="p1">Ut etiam sit amet nisl. Dolor magna eget est lorem ipsum. Fermentum leo vel orci porta non pulvinar. Placerat orci nulla pellentesque dignissim enim sit amet. Habitasse platea dictumst quisque sagittis purus sit amet.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="thb-section-container thb-skin-dark">
+                <div id="main-content" style="margin-top: 0;">
+                    <div class="thb-text" style="text-align: center;">
+                        <h1 class="thb-section-title"><strong>Podcast</strong></h1>
+                        <p class="p1">Lorem ipsum dol, ornare. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper.</p>
+
+                        <style>
+                            .podcast-list {
+                                display: grid;
+                                gap: 2rem;
+                                grid-template-columns: 1fr 1fr 1fr;
+                            }
+                            
+                            .podcast-list .podcast-item {
+                                border-radius: 15px;
+                                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                                display: block;
+                                padding: 1.5rem 1rem;
+                            }
+                            
+                            .podcast-list .podcast-item h3 {
+                                margin-bottom: 0;
+                            }
+                            
+                            .podcast-list .podcast-item img {
+                                width: 10rem;
+                                aspect-ratio: 1 / 1;
+                                object-fit: contain;
+                            }
+                            
+                            @media only screen and (max-width: 450px) {
+                                .podcast-list {
+                                    grid-template-columns: 1fr;
+                                }
+                            }
+                        </style>
+
+                        <div class="podcast-list">
+                            <div class="podcast-item">
+                                <img src="podcast/mixcloud_logo.png" alt="">
+                                <h3><strong>Mixcloud</strong></h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur orecati ut itaque sunt illum facere optio quo!</p>
+                                <a href="#"><i class="thb-section-block-icon icon-music"></i>Listen</a>
+                            </div>
+                            <div class="podcast-item">
+                                <img src="podcast/soundcloud_logo.png" alt="">
+                                <h3><strong>Soundcloud</strong></h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur orecati ut itaque sunt illum facere optio quo!</p>
+                                <a href="#"><i class="thb-section-block-icon icon-music"></i>Listen</a>
+                            </div>
+                            <div class="podcast-item">
+                                <img src="podcast/twitch_logo.png" alt="">
+                                <h3><strong>Twitch</strong></h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur orecati ut itaque sunt illum facere optio quo!</p>
+                                <a href="#"><i class="thb-section-block-icon icon-music"></i>Listen</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -730,8 +859,6 @@ your theme's stylesheet content.
                     </div>
                 </div>
             </div>
-
-
 
 
             <footer id="footer">
@@ -841,6 +968,39 @@ your theme's stylesheet content.
             };
             var et_pb_box_shadow_elements = [];
             /* ]]> */
+        </script>
+
+        <script src="../js/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+            // all the configuration related to swiper goes here
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                slidesPerGroup: 1,
+                loop: true,
+                autoplay: true,
+                delay: 1000,
+                loopFillGroupWithBlank: false,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                        // spaceBetween: 20,
+                    },
+                    1100: {
+                        slidesPerView: 4,
+                        spaceBetween: 50,
+                    },
+                },
+            });
         </script>
 
         <script type='text/javascript'>

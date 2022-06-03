@@ -623,13 +623,13 @@ your theme's stylesheet content.
                 </div>
             </div>
 
-            <section id="thb-section-0" class="thb-section boxed  thb-skin-light thb-skin-light thb-section-boxed">
+            <section id="thb-section-0" class="thb-section boxed  thb-skin-light thb-skin-light thb-section-boxed" style="display: none;">
                 <div class="thb-section-extra" data-fixed="1" data-fit-height="1" style=" background-color: #000000; background-image: url(dj-3.jpg);">
                     <span class="thb-background-overlay" style="background-color:#000000;-khtml-opacity:.5;-moz-opacity:.5;opacity:.5;"></span>
                     <div class="thb-section-inner-wrapper">
                         <div id="thb-section-0-row-0" class="thb-section-row">
                             <div class="thb-section-row-inner-wrapper">
-                                <div id="thb-section-0-row-0-column-0" class="thb-section-column thb-section-column-size-full thb-section-column-index-0 translate-center " style="">
+                                <div id="thb-section-0-row-0-column-0" class="thb-section-column thb-section-column-size-full thb-section-column-index-0 translate-center ">
                                     <div class="thb-section-column-inner-wrapper">
                                         <div id="thb-section-0-row-0-column-0-block-0" class="thb-section-column-block thb-section-column-block-thb_text_box icon-small layout-centered icon-style-a layout-style-c " data-section="0" data-row="0" data-column="0" data-index="0">
                                             <div class="thb-section-block-content">
@@ -722,25 +722,50 @@ your theme's stylesheet content.
                 </div>
             </div>
 
-            <div class="thb-section-container thb-skin-dark">
-                <div id="main-content" style="margin-top: 0;">
-                    <div class="thb-text">
-                        <p class="p1"><img data-attachment-id="2368" src="dj-5.jpg" class="alignright size-medium wp-image-2368" style="width:420px;height:600px;" /></p>
-                        <p class="p1"></p>
-                        <p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis mauris sit amet massa vitae. Tincidunt id aliquet risus feugiat in ante metus. Amet consectetur
-                            adipiscing elit ut. Mauris pharetra et ultrices neque ornare. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper.</p>
-                        <p class="p1">Gravida in fermentum et sollicitudin ac orci phasellus egestas. Eleifend quam adipiscing vitae proin sagittis nisl. Purus ut faucibus pulvinar elementum. Vivamus at augue eget arcu dictum varius. Sodales ut etiam sit amet nisl
-                            purus in. Sit amet tellus cras adipiscing enim eu turpis. Erat nam at lectus urna duis convallis convallis tellus.</p>
-                        <p class="p1">Ut etiam sit amet nisl. Dolor magna eget est lorem ipsum. Fermentum leo vel orci porta non pulvinar. Placerat orci nulla pellentesque dignissim enim sit amet. Habitasse platea dictumst quisque sagittis purus sit amet.</p>
+            <div class="thb-section boxed  thb-skin-light thb-skin-light thb-section-boxed" style="background-image: url(dj-2.jpg); background-attachment: fixed; background-size: cover; display: flex;">
+                <div id="main-content" style="margin-top: 0; margin: auto auto;">
+                    <style>
+                        .countdown-title {
+                            font-size: 5rem !important;
+                        }
+                        
+                        .c-name {
+                            font-size: 40% !important;
+                        }
+                        
+                        .action-primary {
+                            background-color: #007cba;
+                            color: white;
+                            border-color: #1d5ba0;
+                        }
+                        /* responsive css */
+                        
+                        @media only screen and (max-width: 450px) {
+                            .countdown-title {
+                                font-size: 3rem !important;
+                            }
+                        }
+                    </style>
+                    <div class="thb-text" style="text-align: center; margin-top: 4rem; margin-bottom: 0;">
+                        <h1 style="margin-bottom: 0;" class="countdown-title"><strong>MUSIC FESTIVAL</strong></h1>
+                    </div>
+                    <div class="thb-text" style="text-align: center;">
+                        <strong>
+                            <h1 id="countDownText"></h1>
+                        </strong>
+                    </div>
+                    <div class="thb-section-block-call-to" style="display: flex; justify-content: center; margin-bottom: 4rem;">
+                        <a class="thb-btn action-primary" href="#" rel="nofollow">
+                            <strong>Get A Ticket</strong></a>
                     </div>
                 </div>
             </div>
 
-            <div class="thb-section-container thb-skin-dark">
-                <div id="main-content" style="margin-top: 0;">
-                    <div class="thb-text" style="text-align: center;">
-                        <h1 class="thb-section-title"><strong>Podcast</strong></h1>
-                        <p class="p1">Lorem ipsum dol, ornare. Posuere sollicitudin citudin aliquam citudin ultrices sagittis orci a scelerisque purus semper.</p>
+            <div class="thb-section-container thb-skin-dark ">
+                <div id="main-content">
+                    <div class="thb-text " style="text-align: center; ">
+                        <h1 class="thb-section-title "><strong>Podcast</strong></h1>
+                        <p class="p1 ">Lorem ipsum dol, ornare. Posuere sollicitudin citudin aliquam citudin ultrices sagittis orci a scelerisque purus semper.</p>
 
                         <style>
                             .podcast-list {
@@ -751,7 +776,7 @@ your theme's stylesheet content.
                             
                             .podcast-list .podcast-item {
                                 border-radius: 15px;
-                                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                                box-shadow: 0 0 15px rgba(0, 0, 0, 0.17);
                                 display: block;
                                 padding: 1.5rem 1rem;
                             }
@@ -773,58 +798,75 @@ your theme's stylesheet content.
                             }
                         </style>
 
-                        <div class="podcast-list">
-                            <div class="podcast-item">
-                                <img src="podcast/mixcloud_logo.png" alt="">
+                        <div class="podcast-list ">
+                            <div class="podcast-item ">
+                                <img src="podcast/mixcloud_logo.png " alt=" ">
                                 <h3><strong>Mixcloud</strong></h3>
                                 <p>Lorem ipsum dolor, sit amet consectetur orecati ut itaque sunt illum facere optio quo!</p>
-                                <a href="#"><i class="thb-section-block-icon icon-music"></i>Listen</a>
+                                <a href="# "><i class="thb-section-block-icon icon-music "></i>Listen</a>
                             </div>
-                            <div class="podcast-item">
-                                <img src="podcast/soundcloud_logo.png" alt="">
+                            <div class="podcast-item ">
+                                <img src="podcast/soundcloud_logo.png " alt=" ">
                                 <h3><strong>Soundcloud</strong></h3>
                                 <p>Lorem ipsum dolor, sit amet consectetur orecati ut itaque sunt illum facere optio quo!</p>
-                                <a href="#"><i class="thb-section-block-icon icon-music"></i>Listen</a>
+                                <a href="# "><i class="thb-section-block-icon icon-music "></i>Listen</a>
                             </div>
-                            <div class="podcast-item">
-                                <img src="podcast/twitch_logo.png" alt="">
+                            <div class="podcast-item ">
+                                <img src="podcast/twitch_logo.png " alt=" ">
                                 <h3><strong>Twitch</strong></h3>
                                 <p>Lorem ipsum dolor, sit amet consectetur orecati ut itaque sunt illum facere optio quo!</p>
-                                <a href="#"><i class="thb-section-block-icon icon-music"></i>Listen</a>
+                                <a href="# "><i class="thb-section-block-icon icon-music "></i>Listen</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div id="thb-section-0" class="thb-section boxed  thb-skin-light thb-skin-light thb-section-boxed">
+            <div class=" thb-section-container thb-skin-dark ">
+                <div id="main-content " style="margin-top: 0; ">
+                    <div class="thb-text ">
+                        <p class="p1 "><img data-attachment-id="2368 " src="dj-5.jpg " class="alignright size-medium wp-image-2368 " style="width:420px;height:600px; " /></p>
+                        <p class="p1 "></p>
+                        <p class="p1 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis mauris sit amet massa vitae. Tincidunt id aliquet risus feugiat in ante metus. Amet consectetur
+                            adipiscing elit ut. Mauris pharetra et ultrices neque ornare. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper.</p>
+                        <p class="p1 ">Gravida in fermentum et sollicitudin ac orci phasellus egestas. Eleifend quam adipiscing vitae proin sagittis nisl. Purus ut faucibus pulvinar elementum. Vivamus at augue eget arcu dictum varius. Sodales ut etiam sit amet nisl
+                            purus in. Sit amet tellus cras adipiscing enim eu turpis. Erat nam at lectus urna duis convallis convallis tellus.</p>
+                        <p class="p1 ">Ut etiam sit amet nisl. Dolor magna eget est lorem ipsum. Fermentum leo vel orci porta non pulvinar. Placerat orci nulla pellentesque dignissim enim sit amet. Habitasse platea dictumst quisque sagittis purus sit amet.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="thb-section-0 " class="thb-section boxed thb-skin-light thb-skin-light thb-section-boxed ">
                 <!-- edit the below 'cooking-3.jpg' to change the background image -->
-                <div class="thb-section-extra" data-parallax="1" data-fit-height="1" style=" background-image: url(dj-4.jpg); min-height: 500px !important; display: grid; align-items: center;">
+                <div class="thb-section-extra " data-parallax="1 " data-fit-height="1 " style=" background-image: url(dj-4.jpg); min-height: 500px !important; display: grid; align-items: center; ">
 
-                    <span class="thb-background-overlay" style="background-color:#000000;-khtml-opacity:.3;-moz-opacity:.3;opacity:.3;"></span>
-                    <div class="thb-section-inner-wrapper">
+                    <span class="thb-background-overlay " style="background-color:#000000;-khtml-opacity:.3;-moz-opacity:.3;opacity:.3; "></span>
+                    <div class="thb-section-inner-wrapper ">
 
-                        <div id="thb-section-0-row-0" class="thb-section-row">
-                            <div class="thb-section-row-inner-wrapper">
+                        <div id="thb-section-0-row-0 " class="thb-section-row ">
+                            <div class="thb-section-row-inner-wrapper ">
 
-                                <div id="thb-section-0-row-0-column-0" class="thb-section-column thb-section-column-size-full thb-section-column-index-0 ">
+                                <div id="thb-section-0-row-0-column-0 " class="thb-section-column thb-section-column-size-full thb-section-column-index-0 ">
 
-                                    <div class="thb-section-column-inner-wrapper">
+                                    <div class="thb-section-column-inner-wrapper ">
 
-                                        <section id="thb-section-0-row-0-column-0-block-0" class="thb-section-column-block thb-section-column-block-thb_text_box icon-medium layout-left-alt icon-style-a layout-style-d " data-section="0" data-row="0" data-column="0" data-index="0">
+                                        <section id="thb-section-0-row-0-column-0-block-0 " class="thb-section-column-block thb-section-column-block-thb_text_box icon-medium layout-left-alt icon-style-a layout-style-d " data-section="0 " data-row="0
+                        " data-column="0 " data-index="0 ">
 
 
-                                            <span class="thb-section-block-icon-wrapper">
-		<i class="thb-section-block-icon icon-quote-left" style="color:#ffffff;"></i>
+                                            <span class="thb-section-block-icon-wrapper ">
+		<i class="thb-section-block-icon icon-quote-left " style="color:#ffffff; "></i>
 	</span>
 
-                                            <div class="thb-section-block-content">
+                                            <div class="thb-section-block-content ">
 
 
 
-                                                <div class="thb-section-block-header">
+                                                <div class="thb-section-block-header ">
 
-                                                    <h2 class="thb-section-block-title">
+                                                    <h2 class="thb-section-block-title ">
                                                         <span>
 						<strong>Let’s make summer feel like it lasts all year with a soundtrack of the best summer hits</strong>			
 		
@@ -845,11 +887,11 @@ your theme's stylesheet content.
                                         </section>
 
 
-                                        <!-- <div id="thb-section-0-row-0-column-0-block-1" class="thb-section-column-block thb-section-column-block-thb_image " data-section="0" data-row="0" data-column="0" data-index="1"> -->
+                                        <!-- <div id="thb-section-0-row-0-column-0-block-1 " class="thb-section-column-block thb-section-column-block-thb_image " data-section="0 " data-row="0 " data-column="0 " data-index="1 "> -->
 
 
                                         <!-- <div class="thb-section-block-thb_image-image-holder ">
-                                                <img src="VennDiagram.png" class="attachment-large" alt="" width="65%" height="60%"></div>
+                                                <img src="VennDiagram.png " class="attachment-large " alt=" " width="65% " height="60% "></div>
                                         </div> -->
                                         <!-- </div> -->
                                     </div>
@@ -898,7 +940,7 @@ your theme's stylesheet content.
                     <div class="menu-primary-container">
                         <ul id="menu-primary-1" class="menu">
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1211"><a href="../index.html"><i class="icon-home icon-large"></i></a></li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-246 current_page_item menu-item-878"><a href="../about/index.html" aria-current="page">About</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page page-item-246 menu-item-878"><a href="../about/index.html" aria-current="page">About</a></li>
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-252"><a href="../resume/index.html">Resume</a></li>
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1221"><a href="../contact/index.html">Contact</a></li>
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1221">
@@ -920,19 +962,19 @@ your theme's stylesheet content.
 
         </div>
 
-        <a href="index.html#" class="thb-scrollup thb-go-top"><i id="chevron-up" class="fas fa-chevron-up"></i></a>
+        <a href="index.html# " class="thb-scrollup thb-go-top "><i id="chevron-up " class="fas fa-chevron-up "></i></a>
 
 
-        <div style="display:none">
+        <div style="display:none ">
         </div>
-        <script type="text/javascript">
+        <script type="text/javascript ">
         </script>
         <script type='text/javascript' src='../js/devicepx-jetpack.js'></script>
         <script type='text/javascript' src='../js/gprofiles.js'></script>
         <script type='text/javascript'>
             /* <![CDATA[ */
             var WPGroHo = {
-                "my_hash": ""
+                "my_hash ": " "
             };
             /* ]]> */
         </script>
@@ -941,40 +983,46 @@ your theme's stylesheet content.
         <script type='text/javascript'>
             /* <![CDATA[ */
             var et_pb_custom = {
-                "ajaxurl": "https:\/\/www.farbodjahan.com\/wp-admin\/admin-ajax.php",
-                "images_uri": "https:\/\/www.farbodjahan.com\/wp-content\/themes\/one\/images",
-                "builder_images_uri": "https:\/\/www.farbodjahan.com\/wp-content\/plugins\/divi-builder\/includes\/builder\/images",
-                "et_frontend_nonce": "d5f67860b6",
-                "subscription_failed": "Please, check the fields below to make sure you entered the correct information.",
-                "et_ab_log_nonce": "2364938ec7",
-                "fill_message": "Please, fill in the following fields:",
-                "contact_error_message": "Please, fix the following errors:",
-                "invalid": "Invalid email",
-                "captcha": "Captcha",
-                "prev": "Prev",
-                "previous": "Previous",
-                "next": "Next",
-                "wrong_captcha": "You entered the wrong number in captcha.",
-                "ignore_waypoints": "no",
-                "is_divi_theme_used": "",
-                "widget_search_selector": ".widget_search",
-                "is_ab_testing_active": "",
-                "page_id": "246",
-                "unique_test_id": "",
-                "ab_bounce_rate": "5",
-                "is_cache_plugin_active": "no",
-                "is_shortcode_tracking": "",
-                "tinymce_uri": ""
+                "ajaxurl ": "https:\/\/www.farbodjahan.com\/wp-admin\/admin-ajax.php ",
+                "images_uri ": "https:\/\/www.farbodjahan.com\/wp-content\/themes\/one\/images ",
+                "builder_images_uri ": "https:\/\/www.farbodjahan.com\/wp-content\/plugins\/divi-builder\/includes\/builder\/images ",
+                "et_frontend_nonce ": "d5f67860b6 ",
+                "subscription_failed ": "Please, check the fields below to make sure you entered the correct information. ",
+                "et_ab_log_nonce ": "2364938ec7 ",
+                "fill_message ": "Please, fill in the following fields: ",
+                "contact_error_message ": "Please, fix the following errors: ",
+                "invalid ": "Invalid email ",
+                "captcha ": "Captcha ",
+                "prev ": "Prev ",
+                "previous ": "Previous ",
+                "next ": "Next ",
+                "wrong_captcha ": "You entered the wrong number in captcha. ",
+                "ignore_waypoints ": "no ",
+                "is_divi_theme_used ": " ",
+                "widget_search_selector ": ".widget_search ",
+                "is_ab_testing_active ": " ",
+                "page_id ": "246 ",
+                "unique_test_id ": " ",
+                "ab_bounce_rate ": "5 ",
+                "is_cache_plugin_active ": "no ",
+                "is_shortcode_tracking ": " ",
+                "tinymce_uri ": " "
             };
             var et_pb_box_shadow_elements = [];
             /* ]]> */
         </script>
 
-        <script src="../js/swiper-bundle.min.js"></script>
+        <!-- countdown -->
+        <script src="../js/countdown.js "></script>
+        <script>
+            CountDown("countDownText", "Jun 25, 2022 15:37:25 ");
+        </script>
+
+        <script src="../js/swiper-bundle.min.js "></script>
         <!-- Initialize Swiper -->
         <script>
             // all the configuration related to swiper goes here
-            var swiper = new Swiper(".mySwiper", {
+            var swiper = new Swiper(".mySwiper ", {
                 slidesPerView: 2,
                 spaceBetween: 30,
                 slidesPerGroup: 1,
@@ -983,12 +1031,12 @@ your theme's stylesheet content.
                 delay: 1000,
                 loopFillGroupWithBlank: false,
                 pagination: {
-                    el: ".swiper-pagination",
+                    el: ".swiper-pagination ",
                     clickable: true,
                 },
                 navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
+                    nextEl: ".swiper-button-next ",
+                    prevEl: ".swiper-button-prev ",
                 },
                 breakpoints: {
                     640: {
@@ -1003,24 +1051,27 @@ your theme's stylesheet content.
             });
         </script>
 
+
         <script type='text/javascript'>
             /* <![CDATA[ */
             var jetpackCarouselStrings = {
-                "widths": [370, 700, 1000, 1200, 1400, 2000],
-                "is_logged_in": "",
-                "lang": "en",
-                "ajaxurl": "https:\/\/www.farbodjahan.com\/wp-admin\/admin-ajax.php",
-                "nonce": "b9de65275e",
-                "display_exif": "0",
-                "display_geo": "1",
-                "single_image_gallery": "1",
-                "single_image_gallery_media_file": "",
-                "background_color": "black",
-                "comment": "Comment",
-                "post_comment": "Post Comment",
-                "write_comment": "Write a Comment...",
-                "loading_comments": "Loading Comments...",
-                "download_original": "View full size <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>",
+                "widths ": [370, 700, 1000, 1200, 1400, 2000],
+                "is_logged_in ": " ",
+                "lang ": "en ",
+                "ajaxurl ": "https:\/\/www.farbodjahan.com\/wp-admin\/admin-ajax.php ",
+                "nonce ": "b9de65275e ",
+                "display_exif ": "0 ",
+                "display_geo ": "1 ",
+                "single_image_gallery ": "1 ",
+                "single_image_gallery_media_file ": " ",
+                "background_color ": "black ",
+                "comment ": "Comment ",
+                "post_comment ": "Post Comment ",
+                "write_comment ": "Write a Comment... ",
+                "loading_comments ": "Loading Comments... ",
+                "download_original ": "View full size <span class=\ " +
+                    photo - size + ">{0}<span class=\ " +
+                    photo - size - times + ">\u00d7<\/span>{1}<\/span>",
                 "no_comment_text": "Please be sure to submit some text with your comment.",
                 "no_comment_email": "Please provide an email address to comment.",
                 "no_comment_author": "Please provide your name to comment.",

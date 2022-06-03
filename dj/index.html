@@ -532,9 +532,9 @@ your theme's stylesheet content.
 
                             <a href="../" title="Farbod Jahan | Product Manager">
 
-                                <img src="/Logo/LogoBlack.png" alt="" class="thb-standard-logo">
+                                <img src="../Icon/V1/FarbodJahanBlack.png" alt="" class="thb-standard-logo">
 
-                                <img src="/Logo/LogoWhite.png" alt="" class="thb-white-logo">
+                                <img src="../Icon/V1/FarbodJahanWhite.png" alt="" class="thb-white-logo" style="height: 3.5rem !important;">
 
                             </a>
                         </div>
@@ -611,6 +611,19 @@ your theme's stylesheet content.
 
             <div class="thb-section-container thb-skin-dark">
                 <div id="main-content">
+                    <style>
+                        #latest-music-tracks {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr 1fr;
+                            justify-content: center;
+                        }
+                        
+                        @media only screen and (max-width: 620px) {
+                            #latest-music-tracks {
+                                grid-template-columns: 1fr;
+                            }
+                        }
+                    </style>
                     <div class="thb-text" style="text-align: center;">
                         <!-- provide a title -->
                         <h1 class="thb-section-title"><strong>Latest Music</strong></h1>
@@ -618,7 +631,7 @@ your theme's stylesheet content.
                         <p class="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum vero, quis quo laboriosam ratione molestias dolores alias tenetur ducimus repellendus excepturi.</p>
                     </div>
                     <div id="latest-music-tracks">
-                        <div class="loading"></div>
+                        <div class="loading" style="grid-column: 1 / span 3;"></div>
                     </div>
                 </div>
             </div>

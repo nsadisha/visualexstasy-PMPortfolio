@@ -176,6 +176,76 @@
     <!-- css related to dropdown list item -->
     <link rel="stylesheet" href="../css/dropdown.css">
     <link rel="stylesheet" href="../css/simple-lightbox.min.css">
+    <!-- dynamic images css -->
+    <style>
+        .fade-in-right {
+            animation: fade-in-right 1s;
+        }
+        
+        .fade-out-right {
+            animation: fade-out-right 1s;
+        }
+        
+        @keyframes fade-in-right {
+            0% {
+                margin-left: 30px;
+                margin-right: -30px;
+                opacity: 0;
+            }
+            100% {
+                margin-left: 0;
+                margin-right: 0;
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fade-out-right {
+            0% {
+                margin-left: 0;
+                margin-right: 0px;
+                opacity: 1;
+            }
+            100% {
+                margin-left: 30px;
+                margin-right: -30px;
+                opacity: 0;
+            }
+        }
+        
+        .fade-in-left {
+            animation: fade-in-left 1s;
+        }
+        
+        .fade-out-left {
+            animation: fade-out-left 1s;
+        }
+        
+        @keyframes fade-in-left {
+            from {
+                margin-left: -30px;
+                margin-right: 30px;
+                opacity: 0;
+            }
+            to {
+                margin-left: 0px;
+                margin-right: 0px;
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fade-out-left {
+            from {
+                margin-left: 0px;
+                margin-right: 0px;
+                opacity: 1;
+            }
+            to {
+                margin-left: -30px;
+                margin-right: 30px;
+                opacity: 0;
+            }
+        }
+    </style>
     <style type='text/css'>
         img#wpstats {
             display: none
@@ -782,6 +852,34 @@ your theme's stylesheet content.
                 </div>
             </section>
 
+            <div class="thb-skin-dark thb-section-boxed" style="background-color: rgb(253, 253, 253); display: flex; justify-content: center;">
+                <div id="main-content" style="margin-top: 0;">
+                    <div class="thb-text">
+                        <h1 style="text-align: center;"><strong>About Our Food</strong></h1>
+
+                        <p class="p1"><img id="dynamic-image-1" data-attachment-id="2368" src="food/food-1.jpeg" class="alignleft size-medium wp-image-2368" style="width:420px;height:500px;object-fit: cover" /></p>
+                        <p class="p1"></p>
+                        <p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis mauris sit amet massa vitae. Tincidunt id aliquet risus feugiat in ante metus. Amet consectetur
+                            adipiscing elit ut. Mauris pharetra et ultrices neque ornare. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper.</p>
+                        <p class="p1">Gravida in fermentum et sollicitudin ac orci phasellus egestas. Eleifend quam adipiscing vitae proin sagittis nisl. Purus ut faucibus pulvinar elementum. Vivamus at augue eget arcu dictum varius. Sodales ut etiam sit amet nisl
+                            purus in. Sit amet tellus cras adipiscing enim eu turpis. Erat nam at lectus urna duis convallis convallis tellus.</p>
+                        <p class="p1">Ut etiam sit amet nisl. Habitasse platea dictumst quisque sagittis purus sit amet.</p>
+
+                        <p class="p1"><img id="dynamic-image-2" data-attachment-id="2368" src="Food/food-2.jpeg" class="alignright size-medium wp-image-2368" style="width:420px; aspect-ratio: 3 / 2 ;object-fit: cover;" /></p>
+                        <p class="p1">Gravida in fermentum et sollicitudin ac orci phasellus egestas. Eleifend quam adipiscing vitae proin sagittis nisl. Purus ut faucibus pulvinar elementum. Vivamus at augue eget arcu dictum varius. Sodales ut etiam sit amet nisl
+                            purus in. Sit amet tellus cras adipiscing enim eu turpis.</p>
+                        <p class="p1">Eleifend quam adipiscing vitae proin sagittis nisl. Purus ut faucibus pulvinar elementum. Vivamus at augue eget arcu dictum varius. Sodales ut etiam sit amet nisl purus in.</p>
+
+                        <p class="p1"><img id="dynamic-image-3" data-attachment-id="2368" src="Food/food-3.jpeg" class="alignleft size-medium wp-image-2368" style="width:420px;height:500px;object-fit: cover;" /></p>
+                        <p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis mauris sit amet massa vitae. Tincidunt id aliquet risus feugiat in ante metus. Amet consectetur
+                            adipiscing elit ut. Mauris pharetra et ultrices neque ornare. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper.</p>
+                        <p class="p1">Gravida in fermentum et sollicitudin ac orci phasellus egestas. Eleifend quam adipiscing vitae proin sagittis nisl. Purus ut faucibus pulvinar elementum. Vivamus at augue eget arcu dictum varius. Sodales ut etiam sit amet nisl
+                            purus in. Sit amet tellus cras adipiscing enim eu turpis. Erat nam at lectus urna duis convallis convallis tellus.</p>
+                        <p class="p1">Ut etiam sit amet nisl. Habitasse platea dictumst quisque sagittis purus sit amet.</p>
+                    </div>
+                </div>
+            </div>
+
             <section id="thb-section-1" class="thb-section boxed  thb-skin-light thb-skin-light thb-section-boxed">
                 <!-- edit 'cooking-2.jpg to change the image' -->
                 <div class="thb-section-extra" data-fixed="1" data-fit-height="1" style=" background-image: url(cooking-2.jpg); box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);">
@@ -1065,6 +1163,13 @@ your theme's stylesheet content.
         <script src="../js/simple-lightbox.min.js"></script>
         <script>
             var lightbox = new SimpleLightbox('.food-item .light-box-link')
+        </script>
+
+        <script src="../js/dynamic-image.js"></script>
+        <script>
+            dynamicImage_left("dynamic-image-1", 5000, 0, food_image_list)
+            dynamicImage("dynamic-image-2", 5000, 1000, food_image_list)
+            dynamicImage_left("dynamic-image-3", 5000, 500, food_image_list)
         </script>
 
         <script type='text/javascript'>

@@ -1,4 +1,4 @@
-const image_list = [
+const real_estate_image_list = [
     "real-estate.jpg",
     "real-estate-2.jpg",
     "real-estate-3.jpg",
@@ -10,14 +10,28 @@ const image_list = [
     "real-estate-10.jpg",
     "real-estate-11.jpg"
 ]
+const food_image_list = [
+    "food/food-1.jpeg",
+    "food/food-2.jpeg",
+    "food/food-3.jpeg",
+    "food/food-4.jpeg",
+    "food/food-5.jpeg",
+    "food/food-6.jpeg",
+    "food-1.jpg",
+    "food-2.jpg",
+    "food-3.jpg",
+    "food-4.jpg",
+    "food-5.jpg",
+    "food-6.jpg"
+]
 
-function dynamicImage(id, interval, delay) {
+function dynamicImage(id, interval, delay, images) {
     const image = document.getElementById(id)
 
     setTimeout(function() {
         var x = setInterval(function() {
-            const random_int = Math.floor(Math.random() * image_list.length)
-            image.src = image_list[random_int]
+            const random_int = Math.floor(Math.random() * images.length)
+            image.src = images[random_int]
             image.classList.remove('fade-out-right')
             image.classList.add('fade-in-right')
 
@@ -29,13 +43,13 @@ function dynamicImage(id, interval, delay) {
     }, delay)
 }
 
-function dynamicImage_left(id, interval, delay) {
+function dynamicImage_left(id, interval, delay, images) {
     const image = document.getElementById(id)
 
     setTimeout(function() {
         var x = setInterval(function() {
-            const random_int = Math.floor(Math.random() * image_list.length)
-            image.src = image_list[random_int]
+            const random_int = Math.floor(Math.random() * images.length)
+            image.src = images[random_int]
             image.classList.remove('fade-out-left')
             image.classList.add('fade-in-left')
 

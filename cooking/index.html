@@ -176,6 +176,60 @@
     <!-- css related to dropdown list item -->
     <link rel="stylesheet" href="../css/dropdown.css">
     <link rel="stylesheet" href="../css/simple-lightbox.min.css">
+    <!-- row -->
+    <style>
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px;
+        }
+        
+        .row .img-wrapper {
+            /* padding: 10px; */
+            display: flex;
+            justify-content: center;
+        }
+        
+        .row .img-wrapper img {
+            border-radius: 3px;
+            position: relative;
+            box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 20px;
+        }
+        
+        .reverse-mobile div:first-child {
+            grid-row: 1;
+            grid-column: 1;
+        }
+        
+        .reverse-mobile div:last-child {
+            grid-row: 1;
+            grid-column: 2;
+        }
+        
+        .row .col-half {
+            padding: 10px;
+        }
+        
+        .row .col-half p {
+            padding: unset 10px !important;
+            direction: ltr !important;
+        }
+        
+        @media only screen and (max-width: 500px) {
+            .row {
+                grid-template-columns: 1fr;
+                padding: unset 10px;
+            }
+            .reverse-mobile div:first-child {
+                grid-row: 2;
+                grid-column: 1;
+            }
+            .reverse-mobile div:last-child {
+                grid-row: 1;
+                grid-column: 1;
+            }
+        }
+    </style>
     <!-- dynamic images css -->
     <style>
         .fade-in-right {
@@ -852,30 +906,49 @@ your theme's stylesheet content.
                 </div>
             </section>
 
-            <div class="thb-skin-dark thb-section-boxed" style="background-color: rgb(253, 253, 253); display: flex; justify-content: center;">
-                <div id="main-content" style="margin-top: 0;">
-                    <div class="thb-text">
-                        <h1 style="text-align: center;"><strong>About Our Food</strong></h1>
-
-                        <p class="p1"><img id="dynamic-image-1" data-attachment-id="2368" src="food/food-1.jpeg" class="alignleft size-medium wp-image-2368" style="width:420px;height:500px;object-fit: cover" /></p>
-                        <p class="p1"></p>
-                        <p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis mauris sit amet massa vitae. Tincidunt id aliquet risus feugiat in ante metus. Amet consectetur
-                            adipiscing elit ut. Mauris pharetra et ultrices neque ornare. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper.</p>
-                        <p class="p1">Gravida in fermentum et sollicitudin ac orci phasellus egestas. Eleifend quam adipiscing vitae proin sagittis nisl. Purus ut faucibus pulvinar elementum. Vivamus at augue eget arcu dictum varius. Sodales ut etiam sit amet nisl
-                            purus in. Sit amet tellus cras adipiscing enim eu turpis. Erat nam at lectus urna duis convallis convallis tellus.</p>
-                        <p class="p1">Ut etiam sit amet nisl. Habitasse platea dictumst quisque sagittis purus sit amet.</p>
-
-                        <p class="p1"><img id="dynamic-image-2" data-attachment-id="2368" src="Food/food-2.jpeg" class="alignright size-medium wp-image-2368" style="width:420px; aspect-ratio: 3 / 2 ;object-fit: cover;" /></p>
-                        <p class="p1">Gravida in fermentum et sollicitudin ac orci phasellus egestas. Eleifend quam adipiscing vitae proin sagittis nisl. Purus ut faucibus pulvinar elementum. Vivamus at augue eget arcu dictum varius. Sodales ut etiam sit amet nisl
-                            purus in. Sit amet tellus cras adipiscing enim eu turpis.</p>
-                        <p class="p1">Eleifend quam adipiscing vitae proin sagittis nisl. Purus ut faucibus pulvinar elementum. Vivamus at augue eget arcu dictum varius. Sodales ut etiam sit amet nisl purus in.</p>
-
-                        <p class="p1"><img id="dynamic-image-3" data-attachment-id="2368" src="Food/food-3.jpeg" class="alignleft size-medium wp-image-2368" style="width:420px;height:500px;object-fit: cover;" /></p>
-                        <p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis mauris sit amet massa vitae. Tincidunt id aliquet risus feugiat in ante metus. Amet consectetur
-                            adipiscing elit ut. Mauris pharetra et ultrices neque ornare. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper.</p>
-                        <p class="p1">Gravida in fermentum et sollicitudin ac orci phasellus egestas. Eleifend quam adipiscing vitae proin sagittis nisl. Purus ut faucibus pulvinar elementum. Vivamus at augue eget arcu dictum varius. Sodales ut etiam sit amet nisl
-                            purus in. Sit amet tellus cras adipiscing enim eu turpis. Erat nam at lectus urna duis convallis convallis tellus.</p>
-                        <p class="p1">Ut etiam sit amet nisl. Habitasse platea dictumst quisque sagittis purus sit amet.</p>
+            <div class="thb-section-container thb-skin-dark ">
+                <div id="main-content ">
+                    <div class="dynamic-image-section thb-text">
+                        <h1 style="text-align: center;"><strong>Lorem Ipsum</strong></h1>
+                        <div class="row reverse-mobile">
+                            <div class="col-half">
+                                <p class="p1 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis mauris sit amet massa vitae. Tincidunt id aliquet risus feugiat in ante metus. Amet consectetur
+                                    adipiscing elit ut. Mauris pharetra et ultrices neque ornare. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper.</p>
+                                <p class="p1 ">Gravida in fermentum et sollicitudin ac orci phasellus egestas. Eleifend quam adipiscing vitae proin sagittis nisl. Purus ut faucibus pulvinar elementum. Vivamus at augue eget arcu dictum varius. Sodales ut etiam sit amet
+                                    nisl purus in. Sit amet tellus cras adipiscing enim eu turpis. Erat nam at lectus urna duis convallis convallis tellus.</p>
+                                <p class="p1 ">Ut etiam sit amet nisl. Habitasse platea dictumst quisque sagittis purus sit amet.</p>
+                            </div>
+                            <div class="col-half">
+                                <div class="img-wrapper">
+                                    <img id="dynamic-image-1 " src="Food/food-1.jpeg" style="width:95%;height:500px;object-fit: cover " />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-half">
+                                <div class="img-wrapper">
+                                    <img id="dynamic-image-2 " src="Food/food-4.jpeg" style="width:95%; aspect-ratio: 3 / 2 ;object-fit: cover " />
+                                </div>
+                            </div>
+                            <div class="col-half">
+                                <p class="p1 ">Gravida in fermentum et sollicitudin ac orci phasellus egestas. Eleifend quam adipiscing vitae proin sagittis nisl. Purus ut faucibus pulvinar elementum. Vivamus at augue eget arcu dictum varius. Sodales ut etiam sit amet
+                                    nisl purus in. Sit amet tellus cras adipiscing enim eu turpis.</p>
+                                <p class="p1 ">Eleifend quam adipiscing vitae proin sagittis nisl. Purus ut faucibus pulvinar elementum. Vivamus at augue eget arcu dictum varius.</p>
+                            </div>
+                        </div>
+                        <div class="row reverse-mobile">
+                            <div class="col-half">
+                                <p class="p1 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis mauris sit amet massa vitae. Tincidunt id aliquet risus feugiat in ante metus. Amet consectetur
+                                    adipiscing elit ut. Mauris pharetra et ultrices neque ornare. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper.</p>
+                                <p class="p1 ">Gravida in fermentum et sollicitudin ac orci phasellus egestas. Eleifend quam adipiscing vitae proin sagittis nisl. Purus ut faucibus pulvinar elementum. Vivamus at augue eget arcu dictum varius. Sodales ut etiam sit amet
+                                    nisl purus in. Sit amet tellus cras adipiscing enim eu turpis. Erat nam at lectus urna duis convallis convallis tellus.</p>
+                            </div>
+                            <div class="col-half">
+                                <div class="img-wrapper">
+                                    <img id="dynamic-image-3 " src="Food/food-3.jpeg" style="width:95%;height:500px;object-fit: cover;" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

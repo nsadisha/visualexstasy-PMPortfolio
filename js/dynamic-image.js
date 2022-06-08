@@ -29,7 +29,14 @@ function dynamicImage(id, borderId, interval, delay, images) {
     const image = document.getElementById(id)
     const border = document.getElementById(borderId)
 
+
     setTimeout(function() {
+        setTimeout(function() {
+            image.classList.remove('fade-in-right')
+            image.classList.add('fade-out-right')
+            border.classList.remove('fade-in-right')
+            border.classList.add('fade-out-right')
+        }, interval - 1500)
         var x = setInterval(function() {
             const random_int = Math.floor(Math.random() * images.length)
             image.src = images[random_int]
@@ -52,7 +59,14 @@ function dynamicImage_left(id, borderId, interval, delay, images) {
     const image = document.getElementById(id)
     const border = document.getElementById(borderId)
 
+
     setTimeout(function() {
+        setTimeout(function() {
+            image.classList.remove('fade-in-left')
+            image.classList.add('fade-out-left')
+            border.classList.remove('fade-in-left')
+            border.classList.add('fade-out-left')
+        }, interval - 1500)
         var x = setInterval(function() {
             const random_int = Math.floor(Math.random() * images.length)
             image.src = images[random_int]

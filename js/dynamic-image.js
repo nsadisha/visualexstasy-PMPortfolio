@@ -25,8 +25,9 @@ const food_image_list = [
     "food-6.jpg"
 ]
 
-function dynamicImage(id, interval, delay, images) {
+function dynamicImage(id, borderId, interval, delay, images) {
     const image = document.getElementById(id)
+    const border = document.getElementById(borderId)
 
     setTimeout(function() {
         var x = setInterval(function() {
@@ -34,17 +35,22 @@ function dynamicImage(id, interval, delay, images) {
             image.src = images[random_int]
             image.classList.remove('fade-out-right')
             image.classList.add('fade-in-right')
+            border.classList.remove('fade-out-right')
+            border.classList.add('fade-in-right')
 
             setTimeout(function() {
                 image.classList.remove('fade-in-right')
                 image.classList.add('fade-out-right')
+                border.classList.remove('fade-in-right')
+                border.classList.add('fade-out-right')
             }, interval - 1500)
         }, interval)
     }, delay)
 }
 
-function dynamicImage_left(id, interval, delay, images) {
+function dynamicImage_left(id, borderId, interval, delay, images) {
     const image = document.getElementById(id)
+    const border = document.getElementById(borderId)
 
     setTimeout(function() {
         var x = setInterval(function() {
@@ -52,10 +58,14 @@ function dynamicImage_left(id, interval, delay, images) {
             image.src = images[random_int]
             image.classList.remove('fade-out-left')
             image.classList.add('fade-in-left')
+            border.classList.remove('fade-out-left')
+            border.classList.add('fade-in-left')
 
             setTimeout(function() {
                 image.classList.remove('fade-in-left')
                 image.classList.add('fade-out-left')
+                border.classList.remove('fade-in-left')
+                border.classList.add('fade-out-left')
             }, interval - 1500)
         }, interval)
     }, delay)

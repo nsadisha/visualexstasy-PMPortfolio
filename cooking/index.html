@@ -232,18 +232,31 @@
     </style>
     <!-- dynamic images css -->
     <style>
+        .dynamic-image-btn {
+            padding: 0.5rem 1.5rem;
+            border: solid #1d5ba0 2px;
+            background-color: transparent;
+            color: #1d5ba0;
+            transition: 0.3s;
+        }
+        
+        .dynamic-image-btn:hover {
+            color: white;
+            background-color: #1d5ba0;
+        }
+        
         .fade-in-right {
-            animation: fade-in-right 1s;
+            animation: fade-in-right 1.5s ease-in-out;
         }
         
         .fade-out-right {
-            animation: fade-out-right 1s;
+            animation: fade-out-right 1.5s ease-in-out;
         }
         
         @keyframes fade-in-right {
             0% {
-                margin-left: 30px;
-                margin-right: -30px;
+                margin-left: 50px;
+                margin-right: -50px;
                 opacity: 0;
             }
             100% {
@@ -260,24 +273,22 @@
                 opacity: 1;
             }
             100% {
-                margin-left: 30px;
-                margin-right: -30px;
                 opacity: 0;
             }
         }
         
         .fade-in-left {
-            animation: fade-in-left 1s;
+            animation: fade-in-left 1.5s ease-in-out;
         }
         
         .fade-out-left {
-            animation: fade-out-left 1s;
+            animation: fade-out-left 1.5s ease-in-out;
         }
         
         @keyframes fade-in-left {
             from {
-                margin-left: -30px;
-                margin-right: 30px;
+                margin-left: -50px;
+                margin-right: 50px;
                 opacity: 0;
             }
             to {
@@ -294,8 +305,6 @@
                 opacity: 1;
             }
             to {
-                margin-left: -30px;
-                margin-right: 30px;
                 opacity: 0;
             }
         }
@@ -912,11 +921,10 @@ your theme's stylesheet content.
                         <h1 style="text-align: center;"><strong>Lorem Ipsum</strong></h1>
                         <div class="row reverse-mobile">
                             <div class="col-half">
+                                <h1 style="line-height: normal;">Lorem ipsum dolor sit</h1>
                                 <p class="p1 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis mauris sit amet massa vitae. Tincidunt id aliquet risus feugiat in ante metus. Amet consectetur
                                     adipiscing elit ut. Mauris pharetra et ultrices neque ornare. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper.</p>
-                                <p class="p1 ">Gravida in fermentum et sollicitudin ac orci phasellus egestas. Eleifend quam adipiscing vitae proin sagittis nisl. Purus ut faucibus pulvinar elementum. Vivamus at augue eget arcu dictum varius. Sodales ut etiam sit amet
-                                    nisl purus in. Sit amet tellus cras adipiscing enim eu turpis. Erat nam at lectus urna duis convallis convallis tellus.</p>
-                                <p class="p1 ">Ut etiam sit amet nisl. Habitasse platea dictumst quisque sagittis purus sit amet.</p>
+                                <button class="dynamic-image-btn">Click here</button>
                             </div>
                             <div class="col-half">
                                 <div class="img-wrapper">
@@ -931,17 +939,16 @@ your theme's stylesheet content.
                                 </div>
                             </div>
                             <div class="col-half">
-                                <p class="p1 ">Gravida in fermentum et sollicitudin ac orci phasellus egestas. Eleifend quam adipiscing vitae proin sagittis nisl. Purus ut faucibus pulvinar elementum. Vivamus at augue eget arcu dictum varius. Sodales ut etiam sit amet
-                                    nisl purus in. Sit amet tellus cras adipiscing enim eu turpis.</p>
-                                <p class="p1 ">Eleifend quam adipiscing vitae proin sagittis nisl. Purus ut faucibus pulvinar elementum. Vivamus at augue eget arcu dictum varius.</p>
+                                <h1 style="line-height: normal;">Eleifend quam adipiscing vitae</h1>
+                                <p class="p1 ">Eleifend quam adipiscing vitae proin sagittis nisl. Purus ut faucibus pulvinar elementum. Vivamus at augue eget arcu dictum varius. Mauris pharetra et ultrices neque ornare.</p>
                             </div>
                         </div>
                         <div class="row reverse-mobile">
                             <div class="col-half">
+                                <h1 style="line-height: normal;">Gravida in fermentum et</h1>
                                 <p class="p1 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis mauris sit amet massa vitae. Tincidunt id aliquet risus feugiat in ante metus. Amet consectetur
                                     adipiscing elit ut. Mauris pharetra et ultrices neque ornare. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper.</p>
-                                <p class="p1 ">Gravida in fermentum et sollicitudin ac orci phasellus egestas. Eleifend quam adipiscing vitae proin sagittis nisl. Purus ut faucibus pulvinar elementum. Vivamus at augue eget arcu dictum varius. Sodales ut etiam sit amet
-                                    nisl purus in. Sit amet tellus cras adipiscing enim eu turpis. Erat nam at lectus urna duis convallis convallis tellus.</p>
+                                <p class="p1 ">Gravida in fermentum et sollicitudin ac orci phasellus egestas. Eleifend quam adipiscing vitae proin sagittis nisl. Purus ut faucibus pulvinar elementum.</p>
                             </div>
                             <div class="col-half">
                                 <div class="img-wrapper">
@@ -1240,9 +1247,9 @@ your theme's stylesheet content.
 
         <script src="../js/dynamic-image.js"></script>
         <script>
-            dynamicImage_left("dynamic-image-1", 5000, 0, food_image_list)
-            dynamicImage("dynamic-image-2", 5000, 1000, food_image_list)
-            dynamicImage_left("dynamic-image-3", 5000, 500, food_image_list)
+            dynamicImage("dynamic-image-1", 5000, 0, food_image_list)
+            dynamicImage_left("dynamic-image-2", 5000, 1000, food_image_list)
+            dynamicImage("dynamic-image-3", 5000, 500, food_image_list)
         </script>
 
         <script type='text/javascript'>

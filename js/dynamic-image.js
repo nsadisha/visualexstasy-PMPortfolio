@@ -38,7 +38,7 @@ function dynamicImage(id, interval, delay, images) {
             setTimeout(function() {
                 image.classList.remove('fade-in-right')
                 image.classList.add('fade-out-right')
-            }, interval - 1000)
+            }, interval - 1500)
         }, interval)
     }, delay)
 }
@@ -56,7 +56,7 @@ function dynamicImage_left(id, interval, delay, images) {
             setTimeout(function() {
                 image.classList.remove('fade-in-left')
                 image.classList.add('fade-out-left')
-            }, interval - 1000)
+            }, interval - 1500)
         }, interval)
     }, delay)
 }

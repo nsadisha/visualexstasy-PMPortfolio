@@ -615,6 +615,61 @@ your theme's stylesheet content.
 
 <body class="page-template-default page page-id-246 et_divi_builder logo-left thb-lightbox-enabled layout-width-extended header-layout-a pageheader-alignment-left pageheader-layout-d subtitle-top thb-pageheader-parallax thb-sticky-header thb-theme thb-desktop et-pb-theme-one child theme et-db et_minified_js et_minified_css">
 
+    <div class="recepe-modal" id="myRecepeModal">
+        <div class="close-btn" id="myRecepeModalCloseBtn" onclick="closeModal()">&times;</div>
+        <div class="recepe-modal-body">
+            <iframe src="" frameborder="0" id="myRecepeModalFrame" class="frame"></iframe>
+        </div>
+    </div>
+    <style>
+        .recepe-modal {
+            display: none;
+            position: fixed;
+            width: 100vw;
+            z-index: 1000;
+            height: 100vh;
+            background-color: #00000083;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .recepe-modal .close-btn {
+            position: absolute;
+            right: 50px;
+            top: 0;
+            font-size: 3rem;
+            z-index: 1001;
+            cursor: pointer;
+            color: white;
+            padding: 10px;
+        }
+        
+        .recepe-modal .recepe-modal-body {
+            width: 70vw;
+            height: 90vh;
+            background-color: white;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+        }
+        
+        .recepe-modal .recepe-modal-body .frame {
+            width: 69vw;
+            height: 85vh;
+        }
+        
+        @media only screen and (max-width: 500px) {
+            .recepe-modal .close-btn {
+                color: black;
+                right: 10px;
+            }
+            .recepe-modal .recepe-modal-body {
+                width: 95vw;
+                height: 95vh;
+            }
+        }
+    </style>
 
 
     <div id="thb-external-wrapper">
@@ -831,7 +886,7 @@ your theme's stylesheet content.
                                                 </a>
                                                 <h4 class="title"><strong>Some title</strong></h4>
                                                 <p>Etiam erat velit scelerisque in dictum non consectetur a. Lacus viverra scelerisque in dictum non...</p>
-                                                <a href="recipe.html?img=food/food-1.jpeg" class="read-more"><button>Read more</button></a>
+                                                <a href="recipe.html?img=food/food-1.jpeg" class="read-more recepe-modal-btn"><button>Read more</button></a>
                                             </div>
                                         </section>
                                     </div>
@@ -847,7 +902,7 @@ your theme's stylesheet content.
                                                 </a>
                                                 <h4 class="title"><strong>Some title</strong></h4>
                                                 <p>Etiam erat velit scelerisque in dictum non consectetur a. Lacus viverra scelerisque in dictum non...</p>
-                                                <a href="recipe.html?img=food/food-2.jpeg" class="read-more"><button>Read more</button></a>
+                                                <a href="recipe.html?img=food/food-2.jpeg" class="read-more recepe-modal-btn"><button>Read more</button></a>
                                             </div>
                                         </section>
                                     </div>
@@ -863,7 +918,7 @@ your theme's stylesheet content.
                                                 </a>
                                                 <h4 class="title"><strong>Some title</strong></h4>
                                                 <p>Etiam erat velit scelerisque in dictum non consectetur a. Lacus viverra scelerisque in dictum non...</p>
-                                                <a href="recipe.html?img=food/food-3.jpeg" class="read-more"><button>Read more</button></a>
+                                                <a href="recipe.html?img=food/food-3.jpeg" class="read-more recepe-modal-btn"><button>Read more</button></a>
                                             </div>
                                         </section>
                                     </div>
@@ -883,7 +938,7 @@ your theme's stylesheet content.
                                                 </a>
                                                 <h4 class="title"><strong>Some title</strong></h4>
                                                 <p>Etiam erat velit scelerisque in dictum non consectetur a. Lacus viverra scelerisque in dictum non...</p>
-                                                <a href="recipe.html?img=food/food-4.jpeg" class="read-more"><button>Read more</button></a>
+                                                <a href="recipe.html?img=food/food-4.jpeg" class="read-more recepe-modal-btn"><button>Read more</button></a>
                                             </div>
                                         </section>
                                     </div>
@@ -899,7 +954,7 @@ your theme's stylesheet content.
                                                 </a>
                                                 <h4 class="title"><strong>Some title</strong></h4>
                                                 <p>Etiam erat velit scelerisque in dictum non consectetur a. Lacus viverra scelerisque in dictum non...</p>
-                                                <a href="recipe.html?img=food/food-5.jpeg" class="read-more"><button>Read more</button></a>
+                                                <a href="recipe.html?img=food/food-5.jpeg" class="read-more recepe-modal-btn"><button>Read more</button></a>
                                             </div>
                                         </section>
                                     </div>
@@ -915,7 +970,7 @@ your theme's stylesheet content.
                                                 </a>
                                                 <h4 class="title"><strong>Some title</strong></h4>
                                                 <p>Etiam erat velit scelerisque in dictum non consectetur a. Lacus viverra scelerisque in dictum non...</p>
-                                                <a href="recipe.html?img=food/food-6.jpeg" class="read-more"><button>Read more</button></a>
+                                                <a href="recipe.html?img=food/food-6.jpeg" class="read-more recepe-modal-btn"><button>Read more</button></a>
                                             </div>
                                         </section>
                                     </div>
@@ -1270,6 +1325,9 @@ your theme's stylesheet content.
             dynamicImage_left("dynamic-image-2", "dynamic-border-2", 5000, 1000, food_image_list)
             dynamicImage("dynamic-image-3", "dynamic-border-3", 5000, 500, food_image_list)
         </script>
+
+        <!-- modal -->
+        <script src="../js/modal.js"></script>
 
         <script type='text/javascript'>
             /* <![CDATA[ */

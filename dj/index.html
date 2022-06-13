@@ -1029,7 +1029,16 @@ your theme's stylesheet content.
         <script src="../js/countdown.js "></script>
         <script>
             // set the date and the time for the count down.
-            CountDown("countDownText", "Jun 25, 2022 15:37:25 ");
+            /*
+                sunday - 0
+                monday - 1
+                tuesday - 2
+                wednesday - 3
+                tursday - 4
+                friday - 5
+                saturday - 6
+            */
+            CountDown("countDownText", 2, "00:00:00:00");
         </script>
 
         <script src="../js/swiper-bundle.min.js "></script>
